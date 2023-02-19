@@ -222,7 +222,7 @@ namespace chocolatey.infrastructure.app.services
             {
                 if (configuration.RegularOutput)
                 {
-                    this.Log().Info(() => "{0} {1} - {2}".format_with(feature.Enabled ? "[x]" : "[ ]", feature.Name, feature.Description));
+                    this.Log().Info(() => "{0} {1} - {2}".format_with(feature.Enabled ? "- [x]" : "- [ ]", feature.Name, feature.Description));
                 }
                 else
                 {
